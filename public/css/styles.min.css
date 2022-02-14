@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+input {
+  font-size: 14px;
+}
+body {
+  line-height: 1.4;
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+}
+h1 {
+  margin-bottom: 16px;
+}
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: rgb(107, 102, 102);
+}
+input {
+  border: 1px solid rgb(184, 179, 179);
+  padding: 12px;
+  outline: none;
+  border-radius: 5px;
+}
+button {
+  cursor: pointer;
+  padding: 12px;
+  background: #7f7fd5;
+  border: none;
+  border-radius: 50px 20px;
+  color: #fff;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #5757a0;
+}
+button:disabled {
+  cursor: default;
+  background: #5757a0;
+}
+.centered-form {
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centered-form__box {
+  box-shadow: 0 0 17px 1px #1d1f26;
+  background: #f7f7fa;
+  padding: 24px;
+  width: 350px;
+}
+.centered-form button {
+  width: 100%;
+}
+.centered-form input {
+  margin-bottom: 16px;
+  width: 100%;
+}
+.chat {
+  display: flex;
+}
+
+.chat__sidebar {
+  height: 100vh;
+  color: white;
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  width: 300px;
+}
+.chat__sidebar h2 {
+  font-size: 20px;
+  padding: 10px;
+  margin: 15px;
+}
+
+.chat__sidebar h4 {
+  font-size: 20px;
+  padding: 10px;
+  margin: 15px;
+}
+
+.chat__main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  border: 1px solid rgb(184, 179, 179);
+}
+.chat__messages {
+  flex-grow: 1;
+  padding: 24px 24px 0;
+  overflow-y: scroll;
+}
+.message {
+  margin-bottom: 16px;
+}
+.message__name {
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 10px 0 0 8px;
+}
+.message__meta {
+  color: #777;
+  font-size: 14px;
+}
+.message a {
+  color: #d47171;
+}
+.compose {
+  display: flex;
+  flex-shrink: 0;
+  margin-top: 12px;
+  padding: 24px;
+}
+.compose form {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 16px;
+}
+.compose input {
+  border: 1px solid rgb(184, 179, 179);
+  width: 100%;
+  padding: 12px;
+  margin: 0 16px 0 0;
+  flex-grow: 1;
+  cursor: pointer;
+}
+.compose button {
+  font-size: 14px;
+  border-radius: 50px 20px;
+}
+.room-title {
+  font-weight: 300;
+  font-size: 20px;
+  background: #7f7fd5;
+  padding: 14px;
+  text-transform: capitalize;
+}
+.list-title {
+  font-weight: 300;
+  font-size: 20px;
+  margin: 10px;
+  padding: 12px 24px 0;
+}
+.users {
+  list-style-type: none;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin: 15px 24px 15px 35px;
+}
+
+.leave-room {
+  padding: 10px;
+  position: relative;
+  float: right;
+  border-radius: 50px 20px;
+  top: 290px;
+  background-color: #7f7fd5;
+  margin-right: 100px;
+}
+
+.leave-room a {
+  text-decoration: none;
+  color: white;
+}
